@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+</head>
+<body>
+    <h2>Student Table</h2>
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="number" id="age" placeholder="Age">
+    <input type="number" step="0.01" id="cgpa" placeholder="CGPA">
+    <input type="text" id="department" placeholder="Department">
+    <button onclick="addStudent()">Add</button>
+    <table border="1" id="studentTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Age</th>
+                <th>CGPA</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script>
+        let students = [];
+        function addStudent() {
+            let firstName = document.getElementById("firstName").value;
+            let age = document.getElementById("age").value;
+            let cgpa = document.getElementById("cgpa").value;
+            let department = document.getElementById("department").value;
+            
+            if (firstName.trim() !== "" && age.trim() !== "" && cgpa.trim() !== "" && department.trim() !== "") {
+                students.push({ firstName, age, cgpa, department });
+                document.getElementById("firstName").value = "";
+                document.getElementById("age").value = "";
+                document.getElementById("cgpa").value = "";
+                document.getElementById("department").value = "";
+                updateTable();
+            }
+        }
+        function updateTable() {
+            let tableBody = document.getElementById("studentTable").getElementsByTagName("tbody")[0];
+            tableBody.innerHTML = "";
+            
+            students.map((student) => {
+                let row = tableBody.insertRow();
+                let cell1 = row.insertCell(0);
+                let cell2 = row.insertCell(1);
+                let cell3 = row.insertCell(2);
+                let cell4 = row.insertCell(3);
+                cell1.textContent = student.firstName;
+                cell2.textContent = student.age;
+                cell3.textContent = student.cgpa;
+                cell4.textContent = student.department;
+            });
+        }
+    </script>
+</body>
+</html>
