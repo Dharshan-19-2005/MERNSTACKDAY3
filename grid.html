@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridexample</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding:  20px;
+            border: 3px rgb(13, 64, 216) solid;
+            background-color: aqua;
+        }
+        #grid-item{
+            padding: 30px;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(8, 8, 10);
+            color: aqua;
+            border: 5px rgb(233, 25, 25) dotted;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <div id ="grid-item">1</div>
+    <div id ="grid-item">2</div>
+    <div id ="grid-item">3</div>
+    <div id ="grid-item">4</div>
+    <div id ="grid-item">5</div>
+    <div id ="grid-item">6</div>
+    <div id ="grid-item">7</div>
+    <div id ="grid-item">8</div>
+    <div id ="grid-item">9</div>
+    </div>
+</body>
+</html>
