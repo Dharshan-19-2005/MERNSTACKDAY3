@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Naming and Exporting in JavaScript</title>
+</head>
+<body>
+    <h1>Why Use Capital Letters for Components?</h1>
+    <p>
+        In JavaScript, specifically in frameworks like React, it's a convention to use capital letters when defining components. This helps distinguish components from regular HTML elements.
+    </p>
+    <p>
+        - <strong>Component Naming Convention:</strong> In JSX (JavaScript XML), the convention is that custom components must start with a capital letter. For example, <code>MyComponent</code>. This helps React differentiate between built-in HTML elements and your custom components. For instance, <code>&lt;div&gt;</code> is a regular HTML element, whereas <code>&lt;MyComponent&gt;</code> is a custom component.
+    </p>
+    <p>
+        - <strong>Why Capitalize?</strong> If you use lowercase letters for components (e.g., <code>&lt;myComponent&gt;</code>), React would treat it as a string, resulting in it being interpreted as a regular DOM tag, which would lead to incorrect behavior.
+    </p>
+    <h1>Why Use Default Export?</h1>
+    <p>
+        In JavaScript ES6, the <code>default</code> keyword allows you to export a single entity from a module, making it the default export.
+    </p>
+    <p>
+        - <strong>What is Default Export?</strong> When you use <code>export default</code>, it means you are exporting one primary item from the module. For instance, in a React component, you often export the component itself as the default export.
+    </p>
+    <pre><code>export default MyComponent;</code></pre>
+    <p>
+        - <strong>Why Use Default Export?</strong> The default export allows you to import the module without needing to know the exact name of the entity being exported. This makes the import syntax more flexible and cleaner.
+    </p>
+    <pre><code>import MyComponent from './MyComponent';</code></pre>
+    <p>
+        This syntax simplifies the import because you don't need to match the exported name with the import statement.
+    </p>
+</body>
+</html>
