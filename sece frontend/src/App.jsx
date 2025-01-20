@@ -1,5 +1,6 @@
 import ClassCompEG from "./components/classComponents/ClassCompEG"
 import About from "./FunctionComponents/About"
+import Contact from "./FunctionComponents/Contact"
 import Gallery from "./FunctionComponents/Gallery"
 import Home from "./FunctionComponents/Home"
 
@@ -9,7 +10,8 @@ function App() {
     <Home/>
     <About/>
     <ClassCompEG/>
-    <Gallery/>
+    <Gallery img="SECE LOGO" page="Gallery"/>
+    <Contact/> 
     </section>
 )
 }
