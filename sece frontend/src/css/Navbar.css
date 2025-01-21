@@ -1,0 +1,20 @@
+ol{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(179, 32, 236, 0.837);
+    color: rgb(225, 231, 237);
+}
+.link{
+    text-decoration: none;
+    color: rgb(177, 143, 143);
+}
+.link:hover{
+    background-color: aliceblue;
+    color: rgba(227, 21, 72, 0.895);
+    border-radius: 10px;
+    padding: 5px;
+
+}
