@@ -1,19 +1,21 @@
-ol{
-    display: flex;
-    justify-content: space-between;
+ul{
+    display:flex;
+    justify-content: space-around;
     list-style-type: none;
-    margin: 0%;
-    padding: 0%;
-    background-color: rgba(179, 32, 236, 0.837);
-    color: rgb(225, 231, 237);
+    text-decoration: none;
+    margin:0;
+    padding: 10px;
+    background-color: chocolate;
+    color: rgb(17, 224, 45);
+
 }
 .link{
     text-decoration: none;
-    color: rgb(177, 143, 143);
+    color: rgb(168, 206, 28);
 }
 .link:hover{
-    background-color: aliceblue;
-    color: rgba(227, 21, 72, 0.895);
+    background-color: rgb(47, 130, 202);
+    color: chocolate;
     border-radius: 10px;
     padding: 5px;
 
