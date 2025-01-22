@@ -12,22 +12,24 @@ function App() {
     <>
     <BrowserRouter>
     <Navbar/>
-    <Routes>
-      <Route path="/" element={<Home/>}></Route>
-      <Route path="/About" element={<About/>}></Route>
-      <Route path="/ClassCompEG" element={<ClassCompEG/>}></Route>
-      <Route path="/Gallery" element={<Gallery/>}></Route>
-      <Route path="/Signup" element={<Signup/>}></Route>
-    </Routes>
-    </BrowserRouter>
-    <section>
-    <Home/>
-    <About/>
-    <ClassCompEG/>
-    <Gallery img="SECE LOGO" page="Gallery"/>
-    <Contact/> 
-    </section>
+
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/About" element={<About />}></Route>
+        <Route path="/Contact" element={<Constact />}></Route>
+        <Route path="/ClassCompEG" element={<ClassCompEG />}></Route>
+        <Route path="/Gallery" element={<Gallery/>}></Route>
+        <Route path="/use-state" element={<Contact />}></Route>
+        <Route path='/useEffect' element={<UseEffect />}></Route>
+        <Route path="/UseState" element={<UserState/>}></Route>
+        <Route path="/Signup" element={<Signup/>}></Route>
+        
+        
+      </Routes>
+      </BrowserRouter>
+
     </>
 )
 }
-export default App
+
+export default App;
