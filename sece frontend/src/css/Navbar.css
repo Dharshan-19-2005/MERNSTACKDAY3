@@ -5,8 +5,8 @@ ul{
     text-decoration: none;
     margin:0;
     padding: 10px;
-    background-color: rgba(215, 151, 32, 0.962);
-    color: rgba(0, 0, 0, 0.653);
+    background-color: rgba(23, 205, 20, 0.864);
+    color: rgba(0, 0, 0, 0.947);
 
 }
 .link{
@@ -14,7 +14,7 @@ ul{
     color: rgb(0, 0, 0);
 }
 .link:hover{
-    background-color: rgb(23, 203, 41);
+    background-color: rgba(241, 241, 241, 0.968);
     color: rgba(0, 0, 0, 0.845);
     border-radius: 10px;
     padding: 5px;
