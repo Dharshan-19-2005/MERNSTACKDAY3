@@ -5,6 +5,8 @@ import Gallery from "./components/FunctionalComponents/Gallery"
 import Home from "./components/FunctionalComponents/Home"
 import Navbar from "./components/FunctionalComponents/Navbar"
 import Signup from "./components/FunctionalComponents/Signup"
+import UseEffectAPI from './components/FunctionalComponents/Hooks/UseEffectAPIimage'
+import UseEffectAPIimage from './components/FunctionalComponents/Hooks/UseEffectAPIimage'
 
 import {BrowserRouter ,Routes,Route} from "react-router-dom"
 function App() {
@@ -22,7 +24,9 @@ function App() {
         <Route path="/use-state" element={<Contact />}></Route>
         <Route path='/useEffect' element={<UseEffect />}></Route>
         <Route path="/UseState" element={<UserState/>}></Route>
+        <Route path="/useimg" element={<UseEffectAPIimage/>}></Route>
         <Route path="/Signup" element={<Signup/>}></Route>
+        <Route path="/use-api" element={<UseEffectAPI/>}></Route>
         
         
       </Routes>

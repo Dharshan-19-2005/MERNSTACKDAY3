@@ -3,7 +3,7 @@ const UseEffect = () =>{
     var [text,setText] = useState(""); 
     useEffect(() => {
         console.log(text);
-    })
+    },[text])
     return (
         <div>
             <h1>This is useEffect Example.</h1>
@@ -12,4 +12,4 @@ const UseEffect = () =>{
         </div>
     )
 }
-export default UseEffect;
+export default UseEffect;       
