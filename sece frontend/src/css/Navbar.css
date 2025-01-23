@@ -5,17 +5,17 @@ ul{
     text-decoration: none;
     margin:0;
     padding: 10px;
-    background-color: rgba(30, 233, 77, 0.962);
-    color: blue;
+    background-color: rgba(215, 151, 32, 0.962);
+    color: rgba(0, 0, 0, 0.653);
 
 }
 .link{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .link:hover{
-    background-color: rgb(208, 218, 226);
-    color: rgb(228, 27, 218);
+    background-color: rgb(23, 203, 41);
+    color: rgba(0, 0, 0, 0.845);
     border-radius: 10px;
     padding: 5px;
 

@@ -7,8 +7,11 @@ import Navbar from "./components/FunctionalComponents/Navbar"
 import Signup from "./components/FunctionalComponents/Signup"
 import UseEffectAPI from './components/FunctionalComponents/Hooks/UseEffectAPIimage'
 import UseEffectAPIimage from './components/FunctionalComponents/Hooks/UseEffectAPIimage'
-
+import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo"  
 import {BrowserRouter ,Routes,Route} from "react-router-dom"
+import UseRef from "./components/FunctionalComponents/Hooks/UseRef"
+import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback"
+import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect"
 function App() {
   return (
     <>
@@ -18,15 +21,18 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/About" element={<About />}></Route>
-        <Route path="/Contact" element={<Constact />}></Route>
+        <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/ClassCompEG" element={<ClassCompEG />}></Route>
         <Route path="/Gallery" element={<Gallery/>}></Route>
-        <Route path="/use-state" element={<Contact />}></Route>
-        <Route path='/useEffect' element={<UseEffect />}></Route>
-        <Route path="/UseState" element={<UserState/>}></Route>
-        <Route path="/useimg" element={<UseEffectAPIimage/>}></Route>
+        
+        <Route path="/UseEffect" element={<UseEffect/>}></Route>
+        <Route path="/UseEffectAPI" element={<UseEffectAPI/>}></Route>
+        <Route path="/use-ref" elements={<UseRef />}></Route>
+        <Route path="/UseEffectAPIimage" element={<UseEffectAPIimage/>}></Route>
+        <Route path="/UseMemo" element={<UseMemo/>}></Route>
+        <Route path="/UseCallback" element={<UseCallback/>}></Route>
         <Route path="/Signup" element={<Signup/>}></Route>
-        <Route path="/use-api" element={<UseEffectAPI/>}></Route>
+        
         
         
       </Routes>
