@@ -12,6 +12,7 @@ import {BrowserRouter ,Routes,Route} from "react-router-dom"
 import UseRef from "./components/FunctionalComponents/Hooks/UseRef"
 import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback"
 import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect"
+import UseState from "./components/FunctionalComponents/Hooks/UseState"
 function App() {
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/ClassCompEG" element={<ClassCompEG />}></Route>
         <Route path="/Gallery" element={<Gallery/>}></Route>
-        
+        <Route path="/UseState" element={<UseState/>}></Route>
         <Route path="/UseEffect" element={<UseEffect/>}></Route>
         <Route path="/UseEffectAPI" element={<UseEffectAPI/>}></Route>
         <Route path="/use-ref" elements={<UseRef />}></Route>
