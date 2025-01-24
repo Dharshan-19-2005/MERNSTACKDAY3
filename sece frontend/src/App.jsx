@@ -28,7 +28,7 @@ function App() {
         <Route path="/UseState" element={<UseState/>}></Route>
         <Route path="/UseEffect" element={<UseEffect/>}></Route>
         <Route path="/UseEffectAPI" element={<UseEffectAPI/>}></Route>
-        <Route path="/use-ref" elements={<UseRef />}></Route>
+        <Route path="/UseRef" elements={<UseRef />}></Route>
         <Route path="/UseEffectAPIimage" element={<UseEffectAPIimage/>}></Route>
         <Route path="/UseMemo" element={<UseMemo/>}></Route>
         <Route path="/UseCallback" element={<UseCallback/>}></Route>
