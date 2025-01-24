@@ -13,6 +13,7 @@ import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect"
 import UseState from "./components/FunctionalComponents/Hooks/UseState"
 import UseEffectAPI from "./components/FunctionalComponents/Hooks/UseEffectAPI"
 import UseRef from "./components/FunctionalComponents/Hooks/UseRef"
+import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMethods"
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/ClassCompEG" element={<ClassCompEG />}></Route>
         <Route path="/Gallery" element={<Gallery/>}></Route>
+        <Route path="/ReactLifecycleMethods" element={<ReactLifecycleMethods/>}></Route>
         <Route path="/UseState" element={<UseState/>}></Route>
         <Route path="/UseEffect" element={<UseEffect/>}></Route>
         <Route path="/UseEffectAPI" element={<UseEffectAPI/>}></Route>
