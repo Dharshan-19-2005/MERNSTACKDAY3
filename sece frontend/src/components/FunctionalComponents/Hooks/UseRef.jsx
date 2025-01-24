@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState} from "react";
 const UseRef =() =>{
     var [text, setText] = useState("");
     var prevRender = useRef();

@@ -5,14 +5,14 @@ import Gallery from "./components/FunctionalComponents/Gallery"
 import Home from "./components/FunctionalComponents/Home"
 import Navbar from "./components/FunctionalComponents/Navbar"
 import Signup from "./components/FunctionalComponents/Signup"
-import UseEffectAPI from './components/FunctionalComponents/Hooks/UseEffectAPIimage'
 import UseEffectAPIimage from './components/FunctionalComponents/Hooks/UseEffectAPIimage'
 import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo"  
 import {BrowserRouter ,Routes,Route} from "react-router-dom"
-import UseRef from "./components/FunctionalComponents/Hooks/UseRef"
 import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback"
 import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect"
 import UseState from "./components/FunctionalComponents/Hooks/UseState"
+import UseEffectAPI from "./components/FunctionalComponents/Hooks/UseEffectAPI"
+import UseRef from "./components/FunctionalComponents/Hooks/UseRef"
 function App() {
   return (
     <>
@@ -28,7 +28,7 @@ function App() {
         <Route path="/UseState" element={<UseState/>}></Route>
         <Route path="/UseEffect" element={<UseEffect/>}></Route>
         <Route path="/UseEffectAPI" element={<UseEffectAPI/>}></Route>
-        <Route path="/UseRef" elements={<UseRef />}></Route>
+        <Route path="/UseRef" element={<UseRef/>}></Route>
         <Route path="/UseEffectAPIimage" element={<UseEffectAPIimage/>}></Route>
         <Route path="/UseMemo" element={<UseMemo/>}></Route>
         <Route path="/UseCallback" element={<UseCallback/>}></Route>
