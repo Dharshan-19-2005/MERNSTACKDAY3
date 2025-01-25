@@ -23,8 +23,19 @@ const Navbar = () => {
             <li><Link class="link" to="/UseEffectAPI">UseEffectAPI</Link></li>
             <li><Link to="/UseEffectAPIimage" className="link">useAPIimg</Link></li>
             <li><Link to="/UseMemo" class="link">UseMemo</Link></li>
-            <li><Link to="/UseCallback" class="link">UseCallback</Link></li>
             <li><Link to="/UseRef" class="link">UseRef</Link></li>
+            <li><Link to="/UseCallback" class="link">UseCallback</Link></li>
+            <li><Link to="/Student" class="link">UseContext</Link></li>
+            
+            
+                </ol>)}
+            </div>
+
+            <div>
+                <span onMouseEnter={toggleDroupdown} >Memorization</span>
+               {dropdown && (<ol onMouseLeave={toggleDroupdown}>
+                <li><Link class="link" to="/Memo">Memo</Link></li>
+                
             
                 </ol>)}
             </div>

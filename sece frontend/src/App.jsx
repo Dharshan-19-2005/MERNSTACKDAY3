@@ -14,6 +14,8 @@ import UseState from "./components/FunctionalComponents/Hooks/UseState"
 import UseEffectAPI from "./components/FunctionalComponents/Hooks/UseEffectAPI"
 import UseRef from "./components/FunctionalComponents/Hooks/UseRef"
 import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMethods"
+import Student from "./components/FunctionalComponents/Hooks/Student"
+import Memo from "./components/FunctionalComponents/Memoization/Memo"
 function App() {
   return (
     <>
@@ -35,6 +37,8 @@ function App() {
         <Route path="/UseMemo" element={<UseMemo/>}></Route>
         <Route path="/UseCallback" element={<UseCallback/>}></Route>
         <Route path="/Signup" element={<Signup/>}></Route>
+        <Route path="/Student" elements={<Student/>}></Route>
+        <Route path="/Memo" elements={<Memo/>}></Route>
   
 
         
