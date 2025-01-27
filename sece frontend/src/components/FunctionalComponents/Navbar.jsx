@@ -26,22 +26,23 @@ const Navbar = () => {
             <li><Link to="/UseRef" class="link">UseRef</Link></li>
             <li><Link to="/UseCallback" class="link">UseCallback</Link></li>
             <li><Link to="/Student" class="link">UseContext</Link></li>
-            
+            <li><Link class="link" to="/UseLocalStorage">LocalStorage</Link></li>
             
                 </ol>)}
             </div>
-
             <div>
                 <span onMouseEnter={toggleDroupdown} >Memorization</span>
                {dropdown && (<ol onMouseLeave={toggleDroupdown}>
                 <li><Link class="link" to="/Memo">Memo</Link></li>
+                <li><Link class="link" to="/LazyLoadingWithSuspense">LazyLoading</Link></li>
                 
-            
+
+                
                 </ol>)}
             </div>
            
             <li><Link class="link" to="/Signup">Signup/login</Link></li>
-            
+              
         </ul>
         </nav>
         </header>

@@ -16,6 +16,7 @@ import UseRef from "./components/FunctionalComponents/Hooks/UseRef"
 import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMethods"
 import Student from "./components/FunctionalComponents/Hooks/Student"
 import Memo from "./components/FunctionalComponents/Memoization/Memo"
+import LazyLoadingWithSuspense from "./components/FunctionalComponents/Memoization/LazyLoadingWithSuspense"
 function App() {
   return (
     <>
@@ -39,6 +40,8 @@ function App() {
         <Route path="/Signup" element={<Signup/>}></Route>
         <Route path="/Student" elements={<Student/>}></Route>
         <Route path="/Memo" elements={<Memo/>}></Route>
+        <Route path="/lazy" element={<LazyLoadingWithSuspense/>}></Route>
+        <Route path="/use-custom" element={<useLocalStorage/>}></Route>
   
 
         
