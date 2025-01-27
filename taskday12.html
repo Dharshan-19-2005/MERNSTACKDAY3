@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>how to use "setOnInsert in mongoDB"?</h2>
+        <p>The $setOnInsert operator in MongoDB is used in conjunction with the update or updateOne/updateMany methods with the upsert option set to true. 
+            It allows you to specify fields that should be set only when a new document is inserted. 
+            If the document already exists, $setOnInsert does nothing.</p>
+        <p><strong> works with upsert: true:</strong>
+            If no document matches the filter, MongoDB inserts a new document and applies the $setOnInsert fields.
+            If a document matches, $setOnInsert is ignored.
+            <br>
+            <strong>Does not overwrite existing fields:</strong>
+            Fields specified in $setOnInsert are only applied during insertion, not during updates.
+        </p>
+    </div>
+</body>
+</html>
