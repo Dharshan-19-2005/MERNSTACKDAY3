@@ -2,8 +2,10 @@ const express = require("express");
 const path = require("path");
 const mdb = require("mongoose");
 const dotenv = require("dotenv");
+const cors = require('cors');
 const app = express();
 dotenv.config();
+app.use(cors());
 const Signup = require("./models/singupSchema");
 
 app.use(express.json());
@@ -110,5 +112,5 @@ app.post('/updatedet',(req,res) =>{
 })
 
 app.listen(3001, () => {
-  console.log("Server connected");
+  console.log("Server connected")
 })

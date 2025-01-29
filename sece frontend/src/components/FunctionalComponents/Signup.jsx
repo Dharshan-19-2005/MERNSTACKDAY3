@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios';
 
 const Signup = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -18,8 +20,19 @@ const Signup = () => {
     }
     setFormData({ username: '', password: '' });
   };
+  const handleSignup = () => {
+    console.log("Event Triggered");
+    const req = axios.post("http://localhost:3001/signup",({
+      username:username,
+      password:password
+    }))
+    var navigate=useNavigate;
+    console.log(req);
+    navigate("/login");
+  };
 
   return (
+    <form onClick={handleSignup}>
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h2>{isLogin ? 'Login Page' : 'Signup Page'}</h2>
       <form onSubmit={handleSubmit}>
@@ -53,7 +66,6 @@ const Signup = () => {
         Switch to {isLogin ? 'Signup' : 'Login'}
       </button>
     </div>
+    </form>
   );
 };
-
-export default Signup;
